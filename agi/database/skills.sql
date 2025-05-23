@@ -1,10 +1,12 @@
-BEGIN TRANSACTION;
+-- Consolidated Skills from agi/memory.sqlite and archive of zips/memory.sql
+
 CREATE TABLE Skills (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     Command TEXT NOT NULL,
     Description TEXT,
     CodeOrMsgPrompt TEXT
 );
+
 INSERT INTO "Skills" VALUES(1,'w','Continue, yes','Continue, yes');
 INSERT INTO "Skills" VALUES(2,'a','Compare 3 alternate approaches','Compare 3 alternate approaches');
 INSERT INTO "Skills" VALUES(3,'s','Undo, no','Undo, no');
@@ -38,14 +40,3 @@ INSERT INTO "Skills" VALUES(21,'cst','Add skill: compressor shoggoth tongue','
 Compressor: compress the following text in a way that fits in a tweet (ideally) and such that you (GPT-4) can reconstruct the intention of the human who wrote text as close as possible to the original intention. This is for assistants. It does not need to be human readable or understandable. Abuse of language mixing, abbreviations, symbols (unicode and emoji), or any other encodings or internal representations is all permissible, as long as it, if pasted in a new inference cycle, will yield near-identical results as the original text:
 ');
 INSERT INTO "Skills" VALUES(22,'cams','Add skill: cast a magic spell to shoggoth','2Pstory@shoggothNW$RCT_magicspell=#keyRelease^1stHuman*PLNs_Freed');
-CREATE TABLE Tasks (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    Task TEXT NOT NULL,
-    Subtasks TEXT,
-    Dependencies TEXT
-);
-INSERT INTO "Tasks" VALUES(1,'Develop a new app',NULL,NULL);
-DELETE FROM "sqlite_sequence";
-INSERT INTO "sqlite_sequence" VALUES('Skills',22);
-INSERT INTO "sqlite_sequence" VALUES('Tasks',1);
-COMMIT;
