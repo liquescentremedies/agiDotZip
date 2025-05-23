@@ -1,12 +1,5 @@
 -- Consolidated Skills from agi/memory.sqlite and archive of zips/memory.sql
 
-CREATE TABLE Skills (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    Command TEXT NOT NULL,
-    Description TEXT,
-    CodeOrMsgPrompt TEXT
-);
-
 INSERT INTO "Skills" VALUES(1,'w','Continue, yes','Continue, yes');
 INSERT INTO "Skills" VALUES(2,'a','Compare 3 alternate approaches','Compare 3 alternate approaches');
 INSERT INTO "Skills" VALUES(3,'s','Undo, no','Undo, no');

@@ -1,5 +1,6 @@
--- Schema for consolidated SQLite database
+-- Consolidated SQLite Schema Definitions
 
+-- Skills Table
 CREATE TABLE Skills (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     Command TEXT NOT NULL,
@@ -7,6 +8,7 @@ CREATE TABLE Skills (
     CodeOrMsgPrompt TEXT
 );
 
+-- Tasks Table
 CREATE TABLE Tasks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     Task TEXT NOT NULL,
@@ -14,12 +16,14 @@ CREATE TABLE Tasks (
     Dependencies TEXT
 );
 
+-- ChatHistory Table
 CREATE TABLE ChatHistory (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     summary TEXT,
     recursive_summary TEXT
 );
 
+-- RollingSummaries Table
 CREATE TABLE RollingSummaries (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     summary TEXT NOT NULL
