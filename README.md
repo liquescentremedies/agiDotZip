@@ -4,7 +4,7 @@ What if Ai agents were .zip bombs
 you could drop on chatGPT?
 
 Introducing: 
-AGi dot zip
+AGI dot zip
 
 upload a .zip file to chatGPT code interpreter
 press go
@@ -30,12 +30,16 @@ No coding experience needed
 The project is organized into the following directories:
 
 - `agi/`
-  - `instructions/`: Contains instruction files
-  - `database/`: Contains database files
-  - `hotkeys/`: Contains hotkey definition files
-  - `prompts/`: Contains prompt files
-- `archive of zips/`: Consolidated and relevant files moved to appropriate subdirectories within `agi/`
-- `old prompts/`: Organized into subdirectories based on the purpose of the prompts, such as `learning`, `coding`, and `miscellaneous`
+  - `instructions/`: Contains instruction files.
+  - `database/`: Contains database files.
+  - `hotkeys/`: Contains hotkey definition files.
+  - `prompts/`: Contains prompt files.
+
+- `archive of zips/`
+  - Consolidated and relevant files have been moved to appropriate subdirectories within `agi/`.
+
+- `old prompts/`
+  - Organized into subdirectories based on the purpose of the prompts, such as `learning`, `coding`, and `miscellaneous`.
 
 ## Contribute to the Project
 
